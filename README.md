@@ -9,7 +9,7 @@ A modern weather application built with **React**, **Bootstrap**, and **OpenWeat
 
 ## 🎯 Features
 
-- 🔍 **Search by Coordinates** - Enter latitude & longitude to get weather
+- 🔍 **Search by Coordinates** - Enter latitude & longitude to get weather*
 - 📍 **Geolocation Support** - Auto-detect user's current location
 - 🌡️ **Real-time Weather** - Temperature, feels like, min/max temp
 - 🌅 **Sunrise & Sunset** - Displays local times
@@ -33,9 +33,57 @@ A modern weather application built with **React**, **Bootstrap**, and **OpenWeat
 - **Home:** `http://localhost:3000/`
 - **Weather:** `http://localhost:3000/weather`
 
+
+
+
 ## ⚙️ Installation & Setup
 
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/Zaid2694/Weather-App.git
 cd Weather-App
+
+2. Install dependencies
+npm install
+
+3. Start the development server
+npm start
+http://localhost:3000
+
+🔑 API Configuration
+This project uses OpenWeatherMap API. To use your own API key:
+
+1.Get free API key from OpenWeatherMap
+
+2.Open src/Components/Weather.js
+
+3.Replace the API key in all axios calls:
+appid=https://api.openweathermap.org/data/2.5/weather?lat=${this.state.lat}&lon=${this.state.lon}&appid=fc20873fd94177935c05130078ecabce&units=metric`
+
+
+📁 Project Structure
+my-react-project/
+├── public/
+├── src/
+│   ├── Assets/
+│   │   └── Loader.css
+│   ├── Components/
+│   │   ├── App.js
+│   │   ├── Header.js
+│   │   ├── Home.js
+│   │   ├── Loader.js
+│   │   ├── Recent.js
+│   │   ├── Result.js
+│   │   ├── Search.js
+│   │   └── Weather.js
+│   ├── index.js
+│   └── reportWebVitals.js
+└── package.json
+  
+
+
+
+
+
+
+
